@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="HUASAN is an editorial interior architecture studio designing spaces of quiet luxury, material honesty, and lasting character." />
+<title>HUASAN | Interior Design Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Hanken+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {paper: "#FAF9F6", "inverse-surface": "#2f312f", primary: "#160f0d", "on-primary-fixed-variant": "#4e4541", "secondary-fixed-dim": "#d7c3b0", "on-secondary-fixed-variant": "#524436", "surface-variant": "#e3e2e0", "on-surface-variant": "#4e4542", "inverse-primary": "#d2c4bf", "on-tertiary-fixed-variant": "#474743", "inverse-on-surface": "#f2f1ee", "surface-bright": "#faf9f6", "surface-container-low": "#f4f3f1", "surface-container-high": "#e9e8e5", "surface-container": "#efeeeb", "on-error": "#ffffff", "surface-dim": "#dbdad7", "tertiary-fixed": "#e5e2dd", "on-background": "#1a1c1a", "on-secondary-fixed": "#241a0e", "primary-fixed-dim": "#d2c4bf", "error-container": "#ffdad6", outline: "#807571", "tertiary-fixed-dim": "#c9c6c2", secondary: "#6b5c4c", espresso: "#2C2421", "surface-tint": "#675c58", "primary-container": "#2c2421", "shadow-taupe": "#9E948B", error: "#ba1a1a", "on-error-container": "#93000a", "outline-variant": "#d1c4bf", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-surface": "#1a1c1a", "on-tertiary-fixed": "#1c1c19", "on-primary": "#ffffff", "tertiary-container": "#262623", surface: "#faf9f6", ivory: "#F5F2ED", tertiary: "#11110f", "on-tertiary": "#ffffff", "secondary-fixed": "#f4dfcb", "on-secondary-container": "#716252", "secondary-container": "#f4dfcb", background: "#faf9f6", "on-primary-fixed": "#211a17", "on-tertiary-container": "#8e8d89", "primary-fixed": "#eedfda", "surface-container-highest": "#e3e2e0", sand: "#D9C5B2", "on-primary-container": "#978a86"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {unit: "8px", gutter: "24px", "margin-desktop": "80px", "section-gap": "160px", "margin-mobile": "20px"}, fontFamily: {"body-lg": ["Hanken Grotesk"], "label-caps": ["Hanken Grotesk"], "headline-md": ["Instrument Serif"], "headline-lg": ["Instrument Serif"], "display-lg-mobile": ["Instrument Serif"], "headline-lg-mobile": ["Instrument Serif"], "display-lg": ["Instrument Serif"], "body-md": ["Hanken Grotesk"], headline: ["Instrument Serif"], display: ["Instrument Serif"], body: ["Hanken Grotesk"], label: ["Hanken Grotesk"]}, fontSize: {"body-lg": ["18px", {lineHeight: "32px", fontWeight: "300"}], "label-caps": ["12px", {lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "600"}], "headline-md": ["24px", {lineHeight: "32px", fontWeight: "500"}], "headline-lg": ["42px", {lineHeight: "52px", fontWeight: "400"}], "display-lg-mobile": ["48px", {lineHeight: "54px", letterSpacing: "-0.01em", fontWeight: "400"}], "headline-lg-mobile": ["32px", {lineHeight: "40px", fontWeight: "400"}], "display-lg": ["80px", {lineHeight: "90px", letterSpacing: "-0.02em", fontWeight: "400"}], "body-md": ["16px", {lineHeight: "28px", fontWeight: "400"}]}}}};</script>
+<style>
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .image-scale {
+            overflow: hidden;
+        }
+        .image-scale img {
+            transition: transform 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        .image-scale:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-paper text-espresso font-body-md antialiased selection:bg-sand selection:text-espresso">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md dark:bg-transparent transition-colors duration-500 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6" id="navbar">
+<a class="font-headline-lg text-headline-lg-mobile md:text-[2.15rem] md:leading-none tracking-tighter text-espresso" href="index.html">HUASAN</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="works.html">Portfolio</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="services.html">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="studio.html">Philosophy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="journal.html">Journal</a>
+</nav>
+<div class="flex items-center gap-6">
+<a class="hidden md:inline-block font-label-caps text-label-caps text-espresso border-b border-espresso pb-1 hover:opacity-70 transition-opacity" href="contact.html">Contact</a>
+<button type="button" id="mobile-menu-btn" aria-label="Open menu" class="md:hidden flex flex-col gap-[4px] w-6">
+<span class="w-full h-[1px] bg-espresso"></span>
+<span class="w-full h-[1px] bg-espresso"></span>
+</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center px-margin-mobile md:px-margin-desktop pt-24 pb-12 overflow-hidden">
+<div class="absolute inset-0 z-0 bg-espresso image-carousel" id="hero-carousel">
+<div class="carousel-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-10">
+<img class="w-full h-full object-cover" data-alt="Premium interior architecture photography, sculptural furniture in a sunlit corner, travertine walls, linen textures, warm minimalist design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfEfsnwuKGGtP3X_8tJIn3VN3Vm6z8k2wtYSZ9UfG5Tl35SYkHjxkAm7nfpPOVsqXxbC9wjt2U9YdCtmEnOtCj_laXS6bZQDe2p-NyvPZvAca03JJaGsRAUfUEU5D58ZVPmlY3Ki3c-sVL8VOKDX-u8Zp-WKM7uDzQLiySkbcvtPGsHkIHuNEbHQzzQXWFLsTghiHn6mQN7zOqQHnEaXeWuIpPRzZ_TmAsmd4FxQUsYGtR9DXflJc"/>
+</div>
+<div class="carousel-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-10">
+<img class="w-full h-full object-cover" data-alt="Premium interior architecture photography, luxury residential living room, warm neutral palette, natural stone and wood, natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuzxHXptg6mEB9Jv-ZiYvtxR7D4bcSloQZ30tTRciANFN-Jlj1hNcgUmjyVN6pb-5e9vpkMdqWR7w0deIE76MnMLDgywzD5FToCIM8b7Ba22DrwZI5j9SjfH-G-9DrBHOSihgk4lOPzmW6zCNIr8R5-g23wRvOh650rLJIjiuR5HkxQSFRvYGtjzKl3MEqhRy9Bx2lnZ4mi_cfUjfKz1aTWazXGXYwxj5j9pYGjU33zx2pkS6zR04"/>
+</div>
+<div class="carousel-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-10">
+<img class="w-full h-full object-cover" data-alt="Premium interior architecture photography, close-up of high-end material textures, natural oak and fluted plaster, soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1fqNtUjhbB7szkFy2gN5xb6gaYW2f4dV-XjrJIgKLrdfrgyH1auMEfcAg5kzecTgomxH3d5LgU39Wwyz_wSKvHJ6L_Amq6XQxL8XOeAcc_ypqWVsXYsofD5c7py6ptRLCiYdflRJ10wX8WdiLn70kE2_qOuExb86GHYvL1kSVKS_CQfsYoEOdUqrks3DJNxMBFiFjrdhYO5XjcLgiqFnRQFkAID8o2aLcUW-IK1-7ERNXg9OO_AU"/>
+</div>
+<div class="absolute inset-0 bg-paper/20 z-20 pointer-events-none"></div>
+</div>
+<div class="relative z-30 w-full max-w-5xl mx-auto flex flex-col items-center text-center fade-in-up">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-[clamp(2.25rem,4.8vw,4.5rem)] md:leading-none text-espresso w-full mb-6 md:whitespace-nowrap">
+                    SPACES THAT SHAPE HOW WE LIVE.
+                </h1>
+<p class="font-body-lg text-body-lg text-espresso/80 max-w-2xl mb-12">
+                    Interior spaces thoughtfully designed around material, light, proportion and the people who inhabit them.
+                </p>
+<a class="font-label-caps text-label-caps text-espresso border-b-2 border-espresso pb-1 hover:bg-espresso hover:text-paper transition-all duration-300" href="works.html">
+                    EXPLORE PROJECTS <span class="material-symbols-outlined align-middle text-[14px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Introduction -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-paper">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-3 mb-8 md:mb-0 fade-in-up">
+<span class="font-label-caps text-label-caps text-on-surface-variant">THE STUDIO</span>
+</div>
+<div class="md:col-span-9 flex flex-col md:flex-row gap-12">
+<h2 class="md:w-1/2 font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-espresso fade-in-up" style="transition-delay: 100ms;">
+                        WE DESIGN SPACES WITH CHARACTER, CALM AND INTENTION.
+                    </h2>
+<div class="md:w-1/2 font-body-lg text-body-lg text-on-surface-variant flex flex-col gap-6 fade-in-up" style="transition-delay: 200ms;">
+<p>At HUASAN, we believe that spaces should do more than function – they should resonate. Each project is a quiet dialogue between light, material, and form, crafted with clarity and emotional depth.</p>
+<p>Rooted in the principles of warm minimalism and quiet luxury, our approach is about creating interiors that feel timeless, grounded, and luminous – spaces that breathe with life, not trends.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Work (Asymmetric Grid) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-ivory" id="portfolio">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16 fade-in-up">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-espresso">SELECTED WORK</h2>
+<a class="hidden md:inline-block font-label-caps text-label-caps text-espresso border-b border-espresso pb-1 hover:opacity-70 transition-opacity" href="works.html">VIEW ALL PROJECTS</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Project 1 -->
+<div class="md:col-span-7 mb-12 md:mb-0 fade-in-up">
+<div class="image-scale w-full aspect-[4/3] bg-surface-container mb-4">
+<img class="w-full h-full object-cover" data-alt="A wide shot of a living room inside Casa Terra, Hyderabad. The design features rich, dark wood panelling contrasting with rough-hewn stone walls and smooth micro-cement floors. Minimalist, low-profile furniture upholstered in off-white linen sits on a large, textured jute rug. The lighting is moody and architectural, emphasizing the natural textures of the materials in a warm, inviting luxury setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUq6-qQGX9PqQ2bHIIRAdSWBBo9aPohNJvF-2pI_5jzV5WbyrDzO5b4yzFyoYbkycw5XjPJqrUdQvl7mL3g-xR3JLUQ08dpoNFJ2SZbPZghbjN1T3Qbtsl8wYrefe9FeVldQykPUZ-I_f_ZcshZBuuGHVryevEAc3WWw3QEMWeXsJD2Zd13_TvtQ8Y7O3M3lEcfe4wSoV-NfxcFU8ZI56ZHGRJcCDbCk6jsb9tWZWPeySNDbJ1tfc"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-espresso"><a href="works.html#casa-terra">Casa Terra</a></h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-2">BANJARA HILLS / RESIDENTIAL</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 max-w-md">A family house in earth, shade, and slow light — stone, teak, and linen held in quiet proportion.</p>
+</div>
+<!-- Project 2 (Offset) -->
+<div class="md:col-span-4 md:col-start-9 md:mt-32 fade-in-up" style="transition-delay: 150ms;">
+<div class="image-scale w-full aspect-[3/4] bg-surface-container mb-4">
+<img class="w-full h-full object-cover" data-alt="An intimate vertical view of a sunlit courtyard inside Courtyard House, Jubilee Hills. A single, sculptural olive tree stands amidst smooth river stones. The surrounding walls are rendered in a warm, earthy plaster. Floor-to-ceiling glass panels connect the interior living space to this tranquil outdoor pocket, blending indoor and outdoor living with minimalist elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa7oZ3kp5fzlqbyviHsdX0oWJxkPTBJ55n2ZJVjd5jL6IRRiPJA2lwJkpuIgPRkHczpX5l8ERtGymV3aGdA1E1WRwdd5woX2MmJPeqgUtssk1cEeU9dWXAElsiJh4Mf7vY5shIkwDm-igU21oq68uoyFkp4-cYJvyQ-AbED2CEpAqonsyVhNVGVXL0TCim4djkiQoQ80xvsNKBzCLS_hFTcNxEGbltwj3OumD1Oe6TWAs6vm6l7MQ"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-espresso"><a href="works.html#courtyard-house">Courtyard House</a></h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-2">JUBILEE HILLS / RESIDENTIAL</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">An inward house organised around a single courtyard tree and shared indoor–outdoor life.</p>
+</div>
+<!-- Project 3 -->
+<div class="md:col-span-5 md:mt-24 fade-in-up" style="transition-delay: 100ms;">
+<div class="image-scale w-full aspect-square bg-surface-container mb-4">
+<img class="w-full h-full object-cover" data-alt="A high-end retail boutique interior named Atelier 27 in Film Nagar. The space is defined by sweeping, curved plaster walls, raw steel display racks, and monolithic stone plinths showcasing curated garments. The lighting is gallery-like, soft and focused, creating a serene, museum-quality atmosphere for a luxury shopping experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR_XIvbeU_9KZDZi4oIDwODwkYKLNb7Tfe7bPzhxggAdwWkcNP2RsWY18bfglWkQR1rITKS7oyVHOpDW9MLVoOSDgMZmpfbcO1hbY14GvD4yGKOmxmB0Z4hGmIAEntSKEgjquC7OggdBtWxW0tcVKXHVfSOoycIs5JKNz3CQkB-0jAq-GAVH-JY8_hT2R1M9EaDmSDZjT6fy8_MTNHrBNm9rvSaIYfXFbqUUXPLzDIWGYrh-5fbqk"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-espresso"><a href="works.html#atelier-nouveau">Atelier 27</a></h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-2">FILM NAGAR / COMMERCIAL</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">A boutique interior of curved plaster, raw steel, and gallery light for a clothing atelier.</p>
+</div>
+<!-- Project 4 -->
+<div class="md:col-span-6 md:col-start-7 md:mt-12 fade-in-up" style="transition-delay: 200ms;">
+<div class="image-scale w-full aspect-[16/9] bg-surface-container mb-4">
+<img class="w-full h-full object-cover" data-alt="A peaceful bedroom in Quiet Forms, Kokapet. The design is profoundly minimal, featuring a low platform bed dressed in crumpled, raw organic cotton bedding. Walls are finished in a tactile, sandy tadelakt. A large, unadorned window frames a lush tropical landscape outside, while the interior remains a muted, calm sanctuary of warm neutrals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEaKwxy24cuEc-toF1MOz-GuGV2Zq-wfcLA_hmjcQJMTQ5b0KCOfTa0LonAcM32yZgI196VWzEmE-SFfzE0968MvtEWTy4444WC5mPZv06ZDy-rtthCA1f7WOIcHZlvZ9U14R_Gs7y8OygFPvaZg7bxue2UK7PTLF-NFi-XElUu_LtEMrTb42VmHuRjZN_2jo1ZjdKgNhxGOofS7SyHgfwcG-B0NVYMFgjtrI9FlBjL4SuTQGpv3w"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-espresso"><a href="works.html">Quiet Forms</a></h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-2">KOKAPET / RESIDENTIAL</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">A muted bedroom sanctuary in sandy tadelakt, raw cotton, and unforced tropical light.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Design Philosophy (Material Focus) -->
+<section class="relative h-[819px] w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60" data-alt="An extreme macro, highly detailed photograph of architectural materials stacked thoughtfully. A slab of heavily veined, warm beige travertine sits atop a piece of smooth, dark oiled walnut wood. Next to it is a swath of coarse, unbleached linen fabric. The lighting is soft and raking, highlighting the incredible texture and tactile qualities of these natural elements, embodying a philosophy of material honesty." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaJE30SU-NkywnTdo3A2_V6zparaQujKm0tkfqvTqEJONmqj9CmyOZdMi_b__qJYbRlyd7KbmdaRihYbwCegWwlFZ3S83eWMWZmonG0p6XIptDKwOBL44QVErf1X-qaZA4XBEWhVsrYX4KkoHrEASV6BgYYIBsZDKkVjgXIhYr3Ac4v-j6C_TC-eFLj9cUjsuNtNUj1sJgxrOvQJEGUCXcqmbAWQqgHs3I_N29lW6Ci0eI-eoeaWc"/>
+<div class="absolute inset-0 bg-espresso/20"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile fade-in-up">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-paper">TIMELESS BY DESIGN</h2>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-espresso text-paper">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-24 fade-in-up">
+<span class="font-label-caps text-label-caps text-shadow-taupe block mb-4">PROCESS</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg">OUR APPROACH</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-shadow-taupe/30 pt-12">
+<div class="fade-in-up" style="transition-delay: 100ms;">
+<span class="font-headline-md text-headline-md text-shadow-taupe block mb-4">01</span>
+<h3 class="font-headline-md text-headline-md mb-4">Discover</h3>
+<p class="font-body-md text-body-md text-paper/80">Understanding the core essence of the client, the site, and the emotional resonance desired for the space.</p>
+</div>
+<div class="fade-in-up" style="transition-delay: 200ms;">
+<span class="font-headline-md text-headline-md text-shadow-taupe block mb-4">02</span>
+<h3 class="font-headline-md text-headline-md mb-4">Define</h3>
+<p class="font-body-md text-body-md text-paper/80">Establishing the conceptual framework, functional layout, and the defining material palette that will ground the design.</p>
+</div>
+<div class="fade-in-up" style="transition-delay: 300ms;">
+<span class="font-headline-md text-headline-md text-shadow-taupe block mb-4">03</span>
+<h3 class="font-headline-md text-headline-md mb-4">Design</h3>
+<p class="font-body-md text-body-md text-paper/80">Meticulously detailing every junction, selecting furnishings, and shaping light to bring the vision into a tactile reality.</p>
+</div>
+<div class="fade-in-up" style="transition-delay: 400ms;">
+<span class="font-headline-md text-headline-md text-shadow-taupe block mb-4">04</span>
+<h3 class="font-headline-md text-headline-md mb-4">Deliver</h3>
+<p class="font-body-md text-body-md text-paper/80">Overseeing the execution with exacting standards, ensuring the final space reflects the initial intention perfectly.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-12 bg-ivory dark:bg-espresso text-espresso dark:text-ivory px-margin-desktop max-w-full mx-auto relative overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter relative z-10">
+<div class="md:col-span-4 flex flex-col justify-between">
+<span class="font-headline-lg text-headline-lg text-espresso dark:text-ivory mb-12">HUASAN</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 HUASAN STUDIO. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="md:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">MENU</span>
+<a class="font-body-md text-body-md hover:underline decoration-espresso underline-offset-4" href="studio.html">About Us</a>
+<a class="font-body-md text-body-md hover:underline decoration-espresso underline-offset-4" href="works.html">Portfolio</a>
+<a class="font-body-md text-body-md hover:underline decoration-espresso underline-offset-4" href="services.html">Services</a>
+<a class="font-body-md text-body-md hover:underline decoration-espresso underline-offset-4" href="journal.html">Journal</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">FOLLOW US</span>
+<a class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container hover:text-espresso dark:hover:text-ivory hover:underline decoration-espresso dark:decoration-ivory underline-offset-4 hover:translate-x-1 transition-transform duration-300" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container hover:text-espresso dark:hover:text-ivory hover:underline decoration-espresso dark:decoration-ivory underline-offset-4 hover:translate-x-1 transition-transform duration-300" href="#">Behance</a>
+<a class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container hover:text-espresso dark:hover:text-ivory hover:underline decoration-espresso dark:decoration-ivory underline-offset-4 hover:translate-x-1 transition-transform duration-300" href="#">Pinterest</a>
+<a class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container hover:text-espresso dark:hover:text-ivory hover:underline decoration-espresso dark:decoration-ivory underline-offset-4 hover:translate-x-1 transition-transform duration-300" href="#">LinkedIn</a>
+</div>
+<div class="flex flex-col gap-4 md:col-span-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">CONTACT</span>
+<p class="font-body-md text-body-md">PLOT 42, ROAD NO. 12,<br/>BANJARA HILLS, HYDERABAD</p>
+<a class="font-body-md text-body-md hover:underline decoration-espresso underline-offset-4" href="mailto:hello@huasan.studio">HELLO@HUASAN.STUDIO</a>
+</div>
+</div>
+</div>
+<div class="mt-24 border-t border-espresso/10 pt-8 flex justify-between items-center relative z-10">
+<div class="flex gap-6">
+<a class="font-label-caps text-label-caps text-on-secondary-container dark:text-on-tertiary-container hover:text-espresso dark:hover:text-ivory hover:underline decoration-espresso dark:decoration-ivory underline-offset-4 hover:translate-x-1 transition-transform duration-300" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container dark:text-on-tertiary-container hover:text-espresso dark:hover:text-ivory hover:underline decoration-espresso dark:decoration-ivory underline-offset-4 hover:translate-x-1 transition-transform duration-300" href="#">Terms of Service</a>
+</div>
+</div>
+<h1 class="absolute bottom-[-5%] left-0 w-full text-center font-display-lg text-[12vw] leading-none text-paper/40 pointer-events-none whitespace-nowrap overflow-hidden">
+                DESIGN WITH INTENTION
+            </h1>
+</footer>
+</main>
+<script>
+        // Simple scroll observer for fade-in animations
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-up').forEach((elem) => {
+                observer.observe(elem);
+            });
+            
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.replace('bg-transparent', 'bg-ivory/90');
+                } else {
+                    navbar.classList.replace('bg-ivory/90', 'bg-transparent');
+                }
+            });
+        });
+    </script>
+
+<div id="mobile-menu" class="fixed inset-0 z-[60] hidden opacity-0 pointer-events-none bg-paper/95 backdrop-blur-xl transition-opacity duration-300">
+  <div class="flex flex-col justify-center h-full px-margin-mobile md:px-margin-desktop gap-8">
+    <a class="font-headline-lg text-headline-lg text-espresso" href="index.html">Home</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="works.html">Portfolio</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="studio.html">Studio</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="services.html">Services</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="journal.html">Journal</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="contact.html">Contact</a>
+  </div>
+</div>
+
+<script src="js/studio.js"></script>
+</body></html>

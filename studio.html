@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="HUASAN is an editorial interior architecture studio designing spaces of quiet luxury, material honesty, and lasting character." />
+<title>HUASAN | About</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+        }
+        
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#8e8d89",
+                        "on-surface-variant": "#4e4542",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#eedfda",
+                        "surface-container": "#efeeeb",
+                        "surface-dim": "#dbdad7",
+                        "inverse-surface": "#2f312f",
+                        "on-secondary-container": "#716252",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-tertiary-fixed-variant": "#474743",
+                        "on-primary-fixed-variant": "#4e4541",
+                        "tertiary": "#11110f",
+                        "secondary": "#6b5c4c",
+                        "on-background": "#1a1c1a",
+                        "inverse-primary": "#d2c4bf",
+                        "on-secondary": "#ffffff",
+                        "outline": "#807571",
+                        "tertiary-fixed-dim": "#c9c6c2",
+                        "on-primary-container": "#978a86",
+                        "on-secondary-fixed-variant": "#524436",
+                        "primary-fixed-dim": "#d2c4bf",
+                        "sand": "#D9C5B2",
+                        "primary": "#160f0d",
+                        "secondary-container": "#f4dfcb",
+                        "tertiary-container": "#262623",
+                        "surface-tint": "#675c58",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1a1c1a",
+                        "secondary-fixed-dim": "#d7c3b0",
+                        "tertiary-fixed": "#e5e2dd",
+                        "on-primary-fixed": "#211a17",
+                        "primary-container": "#2c2421",
+                        "on-secondary-fixed": "#241a0e",
+                        "ivory": "#F5F2ED",
+                        "inverse-on-surface": "#f2f1ee",
+                        "surface-variant": "#e3e2e0",
+                        "outline-variant": "#d1c4bf",
+                        "surface": "#faf9f6",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#faf9f6",
+                        "background": "#faf9f6",
+                        "surface-container-low": "#f4f3f1",
+                        "secondary-fixed": "#f4dfcb",
+                        "surface-container-high": "#e9e8e5",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "surface-container-lowest": "#ffffff",
+                        "paper": "#FAF9F6",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "espresso": "#2C2421",
+                        "shadow-taupe": "#9E948B",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "160px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Instrument Serif"],
+                        "display-lg": ["Instrument Serif"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Instrument Serif"],
+                        "headline-lg-mobile": ["Instrument Serif"],
+                        "headline-lg": ["Instrument Serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "32px", "fontWeight": "300" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "display-lg": ["80px", { "lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "54px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "headline-lg": ["42px", { "lineHeight": "52px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-paper text-primary font-body-md antialiased overflow-x-hidden selection:bg-sand selection:text-espresso">
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md transition-colors duration-500 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6" id="navbar">
+<a class="font-headline-lg text-headline-lg-mobile md:text-[2.15rem] md:leading-none tracking-tighter text-primary" href="index.html">HUASAN</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors hover:opacity-70" href="works.html">Portfolio</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors hover:opacity-70" href="services.html">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors hover:opacity-70" href="studio.html">Philosophy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors hover:opacity-70" href="journal.html">Journal</a>
+</nav>
+<div class="flex items-center gap-6">
+<a class="hidden md:inline-block font-label-caps text-label-caps text-primary border-b border-primary pb-1 hover:opacity-70 transition-opacity" href="contact.html">Contact</a>
+<button class="md:hidden flex flex-col gap-[4px] w-6" id="mobile-menu-btn">
+<span class="w-full h-[1px] bg-primary"></span>
+<span class="w-full h-[1px] bg-primary"></span>
+</button>
+</div>
+</header>
+<!-- Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-surface z-40 hidden flex-col justify-center items-center gap-8 pt-20 transition-all duration-300 opacity-0 pointer-events-none" id="mobile-menu">
+<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface-variant" href="works.html">Portfolio</a>
+<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface-variant" href="services.html">Services</a>
+<a class="font-headline-lg-mobile text-headline-lg-mobile text-primary" href="studio.html">Philosophy</a>
+<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface-variant" href="journal.html">Journal</a>
+<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface-variant" href="contact.html">Contact</a>
+<a class="mt-8 font-label-caps text-label-caps uppercase border-b-2 border-espresso pb-1" href="contact.html">Inquire</a>
+</div>
+<!-- Main Content Canvas -->
+<main class="pt-32 md:pt-48 pb-section-gap">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-10 md:col-start-2 text-center animate-fade-in">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-12">
+                        DESIGNING SPACES WITH PURPOSE AND CHARACTER
+                    </h1>
+</div>
+<div class="md:col-span-12 relative h-[50vh] md:h-[70vh] w-full mt-8 animate-fade-in delay-100">
+<img alt="Architectural studio workspace" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcqvhVN1y837YyWY_wwtP2TM6Pm9Zg1pa5AZxy6tj5ikhrr7zvsUefVsPpkfSNOZQBbCnhZjvr5aeFDa6sr53-CxsJu_Ys0bcALMOetcOSdrSo2w4t4sDkQPxgnvutuUt_a7eXJoHGBsJwmuV8xsI4Ez2AJA4mQOL4QfnzjyWHrXY60r-U9qbl-vdFSjpuGH-WO9QdqCm-iPeNp1Y-MopHRGFBN9z92JM8fk5dpE1GXQWubwG9ZI8"/>
+</div>
+<div class="md:col-span-6 md:col-start-4 text-center mt-16 animate-fade-in delay-200">
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                        We believe that architecture is a dialogue between human life and the environment. By meticulously balancing structural integrity with tactile materiality, we craft environments that resonate on an emotional level. Our practice is rooted in intentionality, where every detail serves the greater narrative of the space.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Asymmetrical Pillars Section -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap">
+<!-- Function & Materiality -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-32 relative">
+<div class="md:col-span-5 md:col-start-1 z-10 animate-fade-in">
+<div class="bg-ivory p-8 md:p-12 shadow-sm relative md:-bottom-24">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-4 block">01 / Foundation</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Function &amp; Flow</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            True luxury is experienced in the seamlessness of daily life. We design floor plans that anticipate movement, orchestrating spaces that support both quiet solitude and vibrant gathering without friction.
+                        </p>
+</div>
+</div>
+<div class="md:col-span-8 md:col-start-5 relative h-[60vh] animate-fade-in delay-100">
+<img class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="A detailed view of a high-end minimalist interior space focusing on the transition between a softly lit corridor and a sun-drenched living area. The image highlights seamless floor transitions using wide-plank light oak and polished concrete. The architectural style is warm minimalism, with soft ivory walls and deep espresso trim. Natural light plays a crucial role in defining the flow of the space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCje5LfDEbFXxnzYF10D53t2NFeA2PTSYXow1huHS18UL6EdP1L6fS2E0lo0mAE1rVcnqW-NJ7KBLAFB9wDzTSFzLBftwyOTu8493zKcIfFF9hZmlbQz8rCGAf8Fy9Z9vBDjIyF_vAgXSYmiYXchZpzg5Ude_Xyt38AVkLTr3myvU0ra6fIUxuYRmYZp2cX3AVWv209C8lBdZ8Of22FxRlaDOYgBk2H9e9d1OKm2FjmzlYZ_zPK6sQ"/>
+</div>
+</div>
+<!-- Materiality -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-32 relative">
+<div class="md:col-span-7 md:col-start-1 order-2 md:order-1 relative h-[60vh] animate-fade-in">
+<img class="w-full h-full object-cover" data-alt="A tight, tactile macro photograph of premium architectural materials. The composition features a slab of heavily veined Calacatta marble resting on roughly hewn limestone, juxtaposed with smooth, darkened bronze fixtures. The lighting is directional, casting deep shadows that emphasize texture and weight. The overall palette consists of organic, muted tones of ivory, taupe, and espresso, evoking a sense of grounded luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJc7C9ntAoRK2VFJt3PE7QYJugMGAS9hX8eRVCUzQHVBa6GnsDLRaGOMmCV3xsh6rbl4cx_d55qgBW0jEoCEtIZObHJjS5zOWdg51fMyEGSJA-qBJA3e5ShFEl4fzJADR6Hb5VNV4NQQn6FpQLQ7zn_Ro8Lv6Fc2B8BbW_NRBV2aqzcfHeh2sawSvr5C3ZqecimXsTXxfX6Z6XXrzKkTsm7R61yO78ED26pj_FycQ4WN91pbbQVfQ"/>
+</div>
+<div class="md:col-span-5 md:col-start-7 order-1 md:order-2 z-10 animate-fade-in delay-100">
+<div class="bg-paper p-8 md:p-12 md:-ml-16 md:mt-24 relative border border-outline/5">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-4 block">02 / Tactility</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Honest Materiality</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            We select materials that age gracefully, celebrating their natural imperfections. Uncoated stone, brushed metals, and raw timber provide a haptic richness that connects the inhabitant to the earth, creating spaces that feel inherently grounded.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Light -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-32 relative">
+<div class="md:col-span-4 md:col-start-2 z-10 animate-fade-in">
+<div class="bg-ivory p-8 md:p-12 shadow-sm relative md:top-1/2 md:-translate-y-1/2">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-4 block">03 / Atmosphere</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Sculpting Light</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Light is our primary building material. By manipulating fenestration, shadow lines, and reflective surfaces, we choreograph how natural light moves through a space, shaping mood and revealing texture throughout the day.
+                        </p>
+</div>
+</div>
+<div class="md:col-span-7 md:col-start-6 relative h-[70vh] animate-fade-in delay-100">
+<img class="w-full h-full object-cover" data-alt="An ethereal architectural photograph capturing a minimalist interior space defined by dramatic natural light. Sharp, geometric beams of sunlight cut across a textured, warm ivory wall and spill onto a pale stone floor. The shadows are deep and moody, creating a high-contrast yet serene atmosphere. The scene evokes a quiet, monastic luxury typical of high-end contemporary design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaTJ_qfP18wKU75s70UcOC7KmhwZGjz3Q9zIn9hrxT0iN6LJRL2n5Wy376r8Pa3co9tMlUWt19AfRfrWbIWu5QCa7Jndoz1mEa-2fRPiIPFTpM5cgSRa0eC6S0wWlqX8h3FHZbkivCMSE67KqVO7ZlM86-vfBaNCxIt0x9B7IL6FWAIlJHQii3MlizTZd1pln5d8sq0z6lO2h0Ky6Wsbm8M40vD3hUi5j0pO8a_QbduFrHV_UpwAo"/>
+</div>
+</div>
+</section>
+<!-- Our Belief Block -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="bg-surface-container-low py-24 px-8 md:px-16 text-center max-w-4xl mx-auto border-t border-b border-outline/10">
+<span class="material-symbols-outlined text-4xl text-sand mb-6">architecture</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-8 max-w-2xl mx-auto">
+                    "We do not design for the moment. We design structures that respect their context, endure through generations, and silently elevate the rituals of daily living."
+                </h3>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">The Studio Ethos</span>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap text-center flex flex-col items-center justify-center">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8">Ready to begin?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl">
+                Whether you are envisioning a private residence or a boutique commercial space, we invite you to start a conversation.
+            </p>
+<a class="inline-block font-label-caps text-label-caps uppercase border-b-2 border-primary text-primary hover:bg-primary hover:text-surface transition-all duration-300 py-4 px-12 tracking-widest" href="contact.html">
+                Start a Project
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-section-gap bg-ivory dark:bg-primary-container border-t border-outline/10">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-desktop py-20 gap-gutter">
+<div class="flex flex-col gap-8">
+<a class="font-display-lg text-display-lg-mobile text-primary dark:text-primary-fixed" href="index.html">HUASAN</a>
+<p class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim max-w-sm">
+                    An architectural design studio based in Hyderabad, crafting spaces of quiet authority and intentional materiality.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-16 md:gap-32 mt-12 md:mt-0">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-tertiary-container uppercase mb-2">Connect</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 ease-linear" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 ease-linear" href="#">Pinterest</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 ease-linear" href="#">LinkedIn</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-tertiary-container uppercase mb-2">Legal</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 ease-linear" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop pb-8 pt-12 border-t border-outline/5 mt-8 flex justify-between items-center text-sm text-on-surface-variant">
+<p>© 2024 HUASAN STUDIO. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for fade-in animations on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            document.querySelectorAll('.animate-fade-in').forEach(el => {
+                el.style.animationPlayState = 'paused';
+                observer.observe(el);
+            });
+
+            // Mobile menu toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            let menuOpen = false;
+
+            if(mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    menuOpen = !menuOpen;
+                    if(menuOpen) {
+                        mobileMenu.classList.remove('hidden');
+                        setTimeout(() => {
+                            mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+                            mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
+                            document.body.style.overflow = 'hidden';
+                        }, 10);
+                        mobileBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">close</span>';
+                    } else {
+                        mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
+                        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+                        setTimeout(() => {
+                            mobileMenu.classList.add('hidden');
+                            document.body.style.overflow = 'auto';
+                        }, 300);
+                        mobileBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">menu</span>';
+                    }
+                });
+            }
+        });
+    </script>
+<script src="js/studio.js"></script>
+</body></html>
