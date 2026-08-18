@@ -1,0 +1,13 @@
+# Environment and Agent configs
+.agents/
+.cursor/
+.env
+.env.*
+node_modules/
+dist/
+.DS_Store
+.stitch-api-key
+.stitch-export/
+.stitch-*.json
+_stitch_fetch.py
+_assemble_site.py
