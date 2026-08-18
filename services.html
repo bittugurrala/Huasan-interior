@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="HUASAN is an editorial interior architecture studio designing spaces of quiet luxury, material honesty, and lasting character." />
+<title>HUASAN - Services</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Hanken+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Guidelines -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#8e8d89",
+                      "on-surface-variant": "#4e4542",
+                      "on-error": "#ffffff",
+                      "primary-fixed": "#eedfda",
+                      "surface-container": "#efeeeb",
+                      "surface-dim": "#dbdad7",
+                      "inverse-surface": "#2f312f",
+                      "on-secondary-container": "#716252",
+                      "surface-container-highest": "#e3e2e0",
+                      "on-tertiary-fixed-variant": "#474743",
+                      "on-primary-fixed-variant": "#4e4541",
+                      "tertiary": "#11110f",
+                      "secondary": "#6b5c4c",
+                      "on-background": "#1a1c1a",
+                      "inverse-primary": "#d2c4bf",
+                      "on-secondary": "#ffffff",
+                      "outline": "#807571",
+                      "tertiary-fixed-dim": "#c9c6c2",
+                      "on-primary-container": "#978a86",
+                      "on-secondary-fixed-variant": "#524436",
+                      "primary-fixed-dim": "#d2c4bf",
+                      "sand": "#D9C5B2",
+                      "primary": "#160f0d",
+                      "secondary-container": "#f4dfcb",
+                      "tertiary-container": "#262623",
+                      "surface-tint": "#675c58",
+                      "error": "#ba1a1a",
+                      "on-surface": "#1a1c1a",
+                      "secondary-fixed-dim": "#d7c3b0",
+                      "tertiary-fixed": "#e5e2dd",
+                      "on-primary-fixed": "#211a17",
+                      "primary-container": "#2c2421",
+                      "on-secondary-fixed": "#241a0e",
+                      "ivory": "#F5F2ED",
+                      "inverse-on-surface": "#f2f1ee",
+                      "surface-variant": "#e3e2e0",
+                      "outline-variant": "#d1c4bf",
+                      "surface": "#faf9f6",
+                      "on-primary": "#ffffff",
+                      "surface-bright": "#faf9f6",
+                      "background": "#faf9f6",
+                      "surface-container-low": "#f4f3f1",
+                      "secondary-fixed": "#f4dfcb",
+                      "surface-container-high": "#e9e8e5",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "surface-container-lowest": "#ffffff",
+                      "paper": "#FAF9F6",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "espresso": "#2C2421",
+                      "shadow-taupe": "#9E948B",
+                      "on-error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "160px",
+                      "margin-desktop": "80px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-md": [
+                              "Instrument Serif"
+                      ],
+                      "display-lg": [
+                              "Instrument Serif"
+                      ],
+                      "label-caps": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg-mobile": [
+                              "Instrument Serif"
+                      ],
+                      "headline-lg-mobile": [
+                              "Instrument Serif"
+                      ],
+                      "headline-lg": [
+                              "Instrument Serif"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "300"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "80px",
+                              {
+                                      "lineHeight": "90px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "48px",
+                              {
+                                      "lineHeight": "54px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "42px",
+                              {
+                                      "lineHeight": "52px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        /* Grain Filter for images */
+        .image-grain::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+            mix-blend-mode: overlay;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Accordion transition */
+        .accordion-content {
+            transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+            opacity: 1;
+            margin-top: 1.5rem;
+        }
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+        .accordion-item.active .accordion-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Fade up animation */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-paper text-on-background antialiased overflow-x-hidden selection:bg-surface-tint selection:text-on-primary">
+<!-- TopNavBar (Generated from JSON) -->
+<header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md dark:bg-transparent transition-colors duration-500 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6" id="navbar">
+<a class="font-headline-lg text-headline-lg-mobile md:text-[2.15rem] md:leading-none tracking-tighter text-espresso" href="index.html">HUASAN</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="works.html">Portfolio</a>
+<a class="font-label-caps text-label-caps text-espresso border-b border-espresso pb-1" href="services.html">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="studio.html">Philosophy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="journal.html">Journal</a>
+</nav>
+<div class="flex items-center gap-6">
+<a class="hidden md:inline-block font-label-caps text-label-caps text-espresso border-b border-espresso pb-1 hover:opacity-70 transition-opacity" href="contact.html">Contact</a>
+<button type="button" id="mobile-menu-btn" aria-label="Open menu" class="md:hidden flex flex-col gap-[4px] w-6">
+<span class="w-full h-[1px] bg-espresso"></span>
+<span class="w-full h-[1px] bg-espresso"></span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-[140px] md:pt-[180px]">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap fade-up">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 md:col-start-2">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-6 tracking-[0.2em]">Our Expertise</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">
+                        SERVICES: <br/> FROM FIRST IDEA TO FINAL DETAIL
+                    </h1>
+</div>
+</div>
+<div class="mt-20 md:mt-32 grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+<div class="md:col-span-5 md:col-start-2 order-2 md:order-1 mt-10 md:mt-0">
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                        We approach each project as a unique narrative, blending architectural rigor with tactile sensitivity. Our comprehensive services ensure a seamless journey from the initial spark of inspiration to the final placement of a curated object.
+                    </p>
+</div>
+<div class="md:col-span-5 md:col-start-8 order-1 md:order-2 relative h-[400px] md:h-[600px] w-full overflow-hidden image-grain">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A close-up, highly detailed architectural photograph showing the intersection of textured natural stone, warm oak wood paneling, and smooth ivory plaster. The lighting is soft and natural, casting delicate shadows that emphasize the materiality and depth. The aesthetic is minimalist, luxurious, and tactile, fitting a high-end interior design studio portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQaeCr0Dc9cHNZEc_gFOLkJ7TAU7td7qzju8G--JVTUkvdGD2dgH4Rz69CcraO04zddCs-YV-VXkFaz-GTECXqMPyf9vtjYpMqaArUMfaKZsajgFTPhRyT52b5YenCbJC-o7nhzykWKpvyiCueDViT75UJ4Iy6OXDpBouwN4mtJdBKBxW-WcKZ9OFgdhRuze3o7XrErh2fc6NuzXWTvsJyJZstaIN69aQ1NTZKSYA9cj8WpSv2cfk"/>
+</div>
+</div>
+</section>
+<!-- Services Accordion Section -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap bg-ivory py-24 md:py-32 relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-paper/50 -z-0"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4 mb-12 md:mb-0">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary sticky top-32">
+                        Core <br/> Disciplines
+                    </h2>
+</div>
+<div class="md:col-span-8 md:pr-12" id="services-accordion">
+<!-- Accordion Item 1 -->
+<div class="accordion-item active border-b border-outline/20 py-8 cursor-pointer fade-up">
+<div class="flex justify-between items-center group">
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-surface-tint transition-colors">Interior Architecture</h3>
+<span class="material-symbols-outlined text-primary accordion-icon" data-icon="add">add</span>
+</div>
+<div class="accordion-content">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+<div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                        We conceptualize and restructure spaces to optimize flow, light, and proportion. This foundational phase involves spatial planning, structural modifications (in collaboration with structural engineers), and the definition of the architectural shell. We focus on creating a harmonious balance between volume and void.
+                                    </p>
+</div>
+<div class="relative h-48 image-grain">
+<img class="w-full h-full object-cover" data-alt="A minimalist architectural sketch morphing into a clean, modern interior space. The image emphasizes clean lines, geometric volumes, and the thoughtful use of natural light entering through large windows. The palette is monochromatic with subtle earthy undertones, reflecting a quiet, high-end design approach." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVyVWVsrLEVm5bRWKEmo0Ca-KoO9ITtmbAp-QWdkI3KegOdUHR1tLbzP4Eks8U_gxNM_tuWs_mHTCoVrJUL6VnJMu743tlAk8qQ5kkYNkYQmc_KxoRIn2IF-y1xF6_qLtIZdWchLmefn4XQIiLuuXUoXTweHZFKP74EinslcpG_HziUC8PqAeyP1jtyf46B6QR23bl3cech5RHpvycl6DTj6tmLsqjbzZ_pvwUS5xQDQqWQwmgmAU"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="accordion-item border-b border-outline/20 py-8 cursor-pointer fade-up">
+<div class="flex justify-between items-center group">
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-surface-tint transition-colors">Material Curation &amp; Sourcing</h3>
+<span class="material-symbols-outlined text-primary accordion-icon" data-icon="add">add</span>
+</div>
+<div class="accordion-content">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+<div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                        The tactile experience is paramount. We painstakingly source materials—from rare marbles to bespoke textiles—that tell a story. Our curation process is deeply tactile, focusing on the interplay of textures and the emotional resonance of physical surfaces within the environment.
+                                    </p>
+</div>
+<div class="relative h-48 image-grain">
+<!-- Using the requested placeholder directly -->
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuZRQSqY1QOEXZ4zD2VQPqNDhbC47Qn63TmB_TjSUS2obJdm8n-yfHaLua0ukTNgZuncj4kRlHqyiemop0OVqpYSOgcwHbJT1K0d1XMvjkBpgrekWSwtOKfJEWmIl4dVKp-JyLrQTyr0KDJKsdOitWaxqFolF16-R_Iq5-ARsTeDTn6pUI_5GwNHk0BZIEcmQQMXLJ5jBUuHY7fFHvQdU8NDh_f3mfvIsjrHpn3zZREbe8SMh3kWgNaQg"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="accordion-item border-b border-outline/20 py-8 cursor-pointer fade-up">
+<div class="flex justify-between items-center group">
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-surface-tint transition-colors">Bespoke Furnishings</h3>
+<span class="material-symbols-outlined text-primary accordion-icon" data-icon="add">add</span>
+</div>
+<div class="accordion-content">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+<div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                        When off-the-shelf solutions fall short, we design custom furniture and joinery. Collaborating with master craftsmen, we create pieces that perfectly integrate with the architectural vision, ensuring uniqueness and uncompromised quality in every detail.
+                                    </p>
+</div>
+<div class="relative h-48 image-grain">
+<img class="w-full h-full object-cover" data-alt="A detail shot of a custom-designed, minimalist wooden chair placed against a textured plaster wall. The craftsmanship is evident in the smooth joints and raw, unvarnished finish of the wood. The lighting highlights the organic grain of the timber and the subtle shadows cast on the wall, conveying luxury through simplicity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCafOexAet9T1fTF3XyKl4kVsxSUfSr7BpTGlhjr5eWRNifZc0N8WKwnRK2kY2BW_SYPOdy--FdENhNA0Uusu7bCs3CQPmHa1E1OaKdvkYRsy4se9yK49MLwqe_dxDZbsYIxtWjD8C1L2mE_jeozyyioVyPRcNM2oVB35123YG22VLHAOOGGHMdPVcwJ0mNiHR3tHeAJUwCYtAWM_oP6gAx-7MwVHR4rq4JSAbJBnyFWidhzqAS5Xk"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 4 -->
+<div class="accordion-item border-b border-outline/20 py-8 cursor-pointer fade-up">
+<div class="flex justify-between items-center group">
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-surface-tint transition-colors">Styling &amp; Art Direction</h3>
+<span class="material-symbols-outlined text-primary accordion-icon" data-icon="add">add</span>
+</div>
+<div class="accordion-content">
+<div class="grid grid-cols-1 gap-8 pt-4">
+<div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                        The final layer of a project brings it to life. We offer comprehensive styling services, curating artwork, objects, and final touches that resonate with the client's identity and the established aesthetic language of the space.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Process Section -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="text-center mb-20 fade-up">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">The Process</h2>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-4 tracking-[0.2em]">A Structured Journey</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-gutter">
+<!-- Process Step 1 -->
+<div class="relative pt-16 pb-8 border-t border-outline/20 fade-up group">
+<span class="absolute top-[-24px] left-0 font-display-lg text-[64px] text-surface-variant group-hover:text-sand transition-colors duration-500">01</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 mt-8">Discover</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        We begin by listening intently. Understanding your lifestyle, aesthetic aspirations, and the unique constraints of the site is crucial to forming the project's conceptual foundation.
+                    </p>
+</div>
+<!-- Process Step 2 -->
+<div class="relative pt-16 pb-8 border-t border-outline/20 fade-up group" style="transition-delay: 100ms;">
+<span class="absolute top-[-24px] left-0 font-display-lg text-[64px] text-surface-variant group-hover:text-sand transition-colors duration-500">02</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 mt-8">Define</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Translating insights into a tangible direction. We develop comprehensive mood boards, preliminary layouts, and material palettes to align our vision with your expectations.
+                    </p>
+</div>
+<!-- Process Step 3 -->
+<div class="relative pt-16 pb-8 border-t border-outline/20 fade-up group" style="transition-delay: 200ms;">
+<span class="absolute top-[-24px] left-0 font-display-lg text-[64px] text-surface-variant group-hover:text-sand transition-colors duration-500">03</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 mt-8">Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        The rigorous refinement phase. Detailed architectural drawings, custom joinery specifications, and meticulous 3D visualizations are produced to finalize every aspect before execution.
+                    </p>
+</div>
+<!-- Process Step 4 -->
+<div class="relative pt-16 pb-8 border-t border-outline/20 fade-up group" style="transition-delay: 300ms;">
+<span class="absolute top-[-24px] left-0 font-display-lg text-[64px] text-surface-variant group-hover:text-sand transition-colors duration-500">04</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 mt-8">Deliver</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Overseeing the physical realization. We collaborate closely with contractors and artisans, ensuring the final result is an exact reflection of the design intent, down to the last detail.
+                    </p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="bg-surface-container py-32 px-8 flex flex-col items-center justify-center text-center fade-up relative overflow-hidden">
+<!-- Subtle texture overlay -->
+<div class="absolute inset-0 opacity-30 mix-blend-multiply" style="background-image: radial-gradient(#d1c4bf 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8">Ready to begin?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        Whether you are envisioning a complete architectural overhaul or a meticulous interior curation, we are here to discuss your project.
+                    </p>
+<a class="inline-block font-label-caps text-label-caps text-primary border-b-2 border-espresso pb-1 hover:bg-espresso hover:text-on-primary transition-all duration-300 px-2 pt-2" href="contact.html">
+                        START A CONVERSATION
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Generated from JSON) -->
+<footer class="w-full mt-section-gap bg-ivory border-t border-outline/10 px-margin-mobile md:px-margin-desktop py-20">
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter">
+<div class="mb-12 md:mb-0">
+<div class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">
+                    HUASAN
+                </div>
+<p class="font-body-md text-body-md text-primary">
+                    © 2024 HUASAN STUDIO. ALL RIGHTS RESERVED.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-12 md:gap-24">
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200 ease-linear" href="#">Instagram</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200 ease-linear" href="#">Pinterest</a></li>
+</ul>
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200 ease-linear" href="#">LinkedIn</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200 ease-linear" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<!-- Scripts -->
+<script>
+        // Accordion Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.flex');
+                
+                header.addEventListener('click', () => {
+                    // Close other items
+                    accordionItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Intersection Observer for fade-up animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+<div id="mobile-menu" class="fixed inset-0 z-[60] hidden opacity-0 pointer-events-none bg-paper/95 backdrop-blur-xl transition-opacity duration-300">
+  <div class="flex flex-col justify-center h-full px-margin-mobile md:px-margin-desktop gap-8">
+    <a class="font-headline-lg text-headline-lg text-espresso" href="index.html">Home</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="works.html">Portfolio</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="studio.html">Studio</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="services.html">Services</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="journal.html">Journal</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="contact.html">Contact</a>
+  </div>
+</div>
+
+<script src="js/studio.js"></script>
+</body></html>

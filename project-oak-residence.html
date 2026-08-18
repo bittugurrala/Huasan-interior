@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Oak Residence — HUASAN STUDIOS Case Study</title>
+  <meta name="description" content="Case study of The Oak Residence by HUASAN Studios. An architectural quietude interior featuring continuous oak joinery, monolithic travertine, and dusk light choreography." />
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Core Design System CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Top Architectural Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" id="brand-logo-nav">
+        HUASAN <span class="dot"></span>
+      </a>
+
+      <nav class="nav-items-desktop">
+        <a href="works.html" class="nav-link active" id="nav-link-works">Work</a>
+        <a href="studio.html" class="nav-link" id="nav-link-studio">Studio</a>
+        <a href="services.html" class="nav-link" id="nav-link-services">Services</a>
+        <a href="contact.html" class="nav-link" id="nav-link-contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-desktop" title="Toggle Dusk/Day Lighting">
+          <span class="material-symbols-outlined" style="font-size: 16px;">contrast</span>
+          <span class="theme-label">Dusk Mode</span>
+        </button>
+        <div class="divider-vert"></div>
+        <a href="contact.html" class="btn btn-primary" id="inquire-nav-cta" style="padding: 0.6rem 1.4rem; font-size: 0.7rem;">
+          Inquire
+        </a>
+        <button class="mobile-menu-trigger" id="mobile-menu-btn" style="background:none; border:none; color:var(--color-primary); cursor:pointer; display:none;">
+          <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 3rem;">
+        <span class="font-serif" style="font-size: 1.5rem; letter-spacing: 0.2em;">HUASAN</span>
+        <button class="mobile-menu-close" style="background:none; border:none; color:#fbf9f5; cursor:pointer;">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <nav style="display:flex; flex-direction:column; gap:1.25rem;">
+        <a href="works.html" class="mobile-nav-link" style="color:var(--color-champagne-brass);">Work</a>
+        <a href="studio.html" class="mobile-nav-link">Studio</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </nav>
+    </div>
+    <div>
+      <div class="label-caps" style="color:var(--color-champagne-brass); margin-bottom: 0.5rem;">Studio</div>
+      <p class="body-sm" style="color:rgba(251,249,245,0.7);">Hyderabad • Jubilee Hills • Banjara Hills</p>
+    </div>
+  </div>
+
+  <main style="padding-top: 100px;">
+    <!-- Project Hero -->
+    <section class="page-container" style="margin-bottom: 4rem;">
+      <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom: 2rem;">
+        <a href="works.html" class="label-caps" style="color:var(--color-stone-muted); text-decoration:none;">← Works Archive</a>
+        <span style="color:var(--color-stone-muted);">/</span>
+        <span class="label-caps" style="color:var(--color-champagne-brass);">Case Study 01</span>
+      </div>
+
+      <h1 class="display-lg" style="margin-bottom: 2rem;">
+        The Oak Residence
+      </h1>
+
+      <!-- Meta Grid Bar -->
+      <div class="grid-12" style="border-top:1px solid var(--color-outline-subtle); border-bottom:1px solid var(--color-outline-subtle); padding: 1.5rem 0; margin-bottom: 3.5rem;">
+        <div style="grid-column: span 3;">
+          <span class="label-caps" style="color:var(--color-stone-muted); display:block; margin-bottom:0.25rem;">Location</span>
+          <span class="body-md font-serif">Banjara Hills, Hyderabad</span>
+        </div>
+        <div style="grid-column: span 3;">
+          <span class="label-caps" style="color:var(--color-stone-muted); display:block; margin-bottom:0.25rem;">Typology</span>
+          <span class="body-md font-serif">Private Residential Estate</span>
+        </div>
+        <div style="grid-column: span 3;">
+          <span class="label-caps" style="color:var(--color-stone-muted); display:block; margin-bottom:0.25rem;">Scale & Scope</span>
+          <span class="body-md font-serif">680 m² (Turnkey Interior)</span>
+        </div>
+        <div style="grid-column: span 3;">
+          <span class="label-caps" style="color:var(--color-stone-muted); display:block; margin-bottom:0.25rem;">Completion</span>
+          <span class="body-md font-serif">Autumn 2025</span>
+        </div>
+      </div>
+
+      <!-- Hero Main Visual -->
+      <div class="image-wrapper" style="height: clamp(450px, 60vh, 750px); margin-bottom: 5rem;">
+        <img src="https://lh3.googleusercontent.com/aida/AP1WRLsDmgvUY7VMBq3oMkqOuaDPiUK6noFhE0vUXZBFojvF39mLCC7SJt93RX6JP25IHzJGWPlahB2GMLKZbhVCUobbCZRbJGkwaLOqc8k53Z2Gp-5XcPYszoraUD_yIUuVlra504eKXHXd0DpxLYLLR_26TJDmojpT97bjT7I3SmtSpMYm6qOXCf--4bke1eOUy0YgDYANMv-vNQZSfwrsJFI28OC14N1Wn-h2JoqUqZPvfRCjH6MrxoUy_3Y"
+             alt="The Oak Residence Living Pavilion Main Gallery" />
+      </div>
+    </section>
+
+    <!-- Narrative Section 1: The Concept & Spatial Tension -->
+    <section class="page-container section-spacing" style="border-bottom: 1px solid var(--color-outline-subtle);">
+      <div class="grid-12" style="align-items:flex-start;">
+        <div style="grid-column: span 4;" class="reveal-on-scroll">
+          <span class="label-caps" style="color:var(--color-champagne-brass); display:block; margin-bottom:0.75rem;">Design Intent</span>
+          <h2 class="headline-md">Geological Permanence & Continuous Timber</h2>
+        </div>
+
+        <div style="grid-column: span 8;" class="reveal-on-scroll">
+          <p class="body-lg" style="margin-bottom: 1.5rem; color:var(--color-primary);">
+            Situated on a quiet rise in Banjara Hills, The Oak Residence was conceived as an architectural counterweight to the pace of the city. The brief called for a sanctuary that felt rooted in the Deccan plateau, using monolithic proportions and a restrained palette of Indian teak, local limestone, and hand-patinated brass.
+          </p>
+          <p class="body-md" style="color:var(--color-stone-muted); margin-bottom: 2.5rem;">
+            Rather than relying on walls to divide the 680-square-meter floor plan, HUASAN introduced continuous architectural millwork that folds seamlessly from ceiling claddings into full-height storage, concealed doors, and integrated lighting channels.
+          </p>
+
+          <div style="border-left: 2px solid var(--color-champagne-brass); padding-left: 2rem; margin-top: 2rem;">
+            <p class="font-serif" style="font-size:1.35rem; font-style:italic; line-height:1.6;">
+              "The transitions between room volumes were calibrated so that daylight leads the inhabitant forward like water carving through stone."
+            </p>
+            <span class="label-caps" style="color:var(--color-stone-muted); margin-top:0.75rem; display:block;">— Julian Vance, Design Principal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Grid 1: Details & Dusk Study -->
+    <section class="page-container section-spacing">
+      <div class="grid-12" style="row-gap: 4rem;">
+        <!-- Kitchen Joinery Detail -->
+        <div style="grid-column: span 6;" class="reveal-on-scroll">
+          <div class="image-wrapper" style="height: 520px; margin-bottom: 1.5rem;">
+            <img src="https://lh3.googleusercontent.com/aida/AP1WRLt-72gQLL4YjZZQgamwJQoeTOZ4nVeP9FI3fG2U5XQUoGGig4xvm-Ozr1xa4T8Xo2EHRzUDddnrI0D_36e5HTlBN4m2frNKc2GcQEokKXIYh1vP83qAv7RWsvC341B4sa2XQgwPvyJpXuxWgNFdaV0U2pH5jAv7I3yTjP6ZNQMQnbjYsEcbDxwoh8deM8g5-YKZHKf-4VaAQ478s1Erq5g2oO3EH0coJv3eiSScUhiJBzKrF4NiMHH-aQY"
+                 alt="Kitchen Joinery and Brass Handle" />
+          </div>
+          <span class="label-caps" style="color:var(--color-stone-muted); display:block; margin-bottom:0.25rem;">Fig 01. Millwork Detail</span>
+          <p class="body-sm">Custom 0.1mm recessed brass hardware flush-mounted in quarter-sawn white oak cabinetry.</p>
+        </div>
+
+        <!-- Master Suite Courtyard Bedroom -->
+        <div style="grid-column: span 6;" class="reveal-on-scroll">
+          <div class="image-wrapper" style="height: 520px; margin-bottom: 1.5rem;">
+            <img src="https://lh3.googleusercontent.com/aida/AP1WRLtyLTvYE8hwLYOQa9fIwUOMXkk8HqViK3QSWJt3dzPZLoTX7N5_nX21hXHEnnKbuvAKUpe38K_InSfXRC7GtbS--T0iz_L_jqcALC2gn3eEJvZjm0_om-Kyhz-bRceo8qkVp3gWgm4Q5SCN3etiLfqo1dODsnG3AyEKuVNhnLghzlql5jMH_gNOPBabo0DocCXo1MFEtAGQxGf5ruQlI_2n3wt-5OGaT30pfQIUrEmO_bByB2lBDtHdmQw"
+                 alt="Courtyard Bedroom Suite" />
+          </div>
+          <span class="label-caps" style="color:var(--color-stone-muted); display:block; margin-bottom:0.25rem;">Fig 02. Private Courtyard Suite</span>
+          <p class="body-sm">Low-profile platform bed with direct connection to the private Deccan courtyard.</p>
+        </div>
+
+        <!-- Full Bleed Dusk Visual -->
+        <div style="grid-column: span 12;" class="reveal-on-scroll">
+          <div class="image-wrapper" style="height: 600px; margin-bottom: 1.5rem;">
+            <img src="https://lh3.googleusercontent.com/aida/AP1WRLuWTD3JjHqbtHSos0CziJpOBHGipzS8W6wFXgE4BOyXs7mI9tL6WOTWiHUe3OmKwRWrrwb8WhEjRXrtFBfJzpoeo78x4mBWUuGtRuyI4o79F4uCviThKcgfn_-CNRFEdz0CBqCpNt478YFRmUzcuhcCwASr55baiZB6MfdxegU_pmwKqUOwNE8b36pngJgImio8c5saDlVZqpkUNca5DDx8jcjxEerFOgOOgC5LvKjLSeOvei8n9sIvEl4"
+                 alt="The Oak Residence Dusk Architecture" />
+          </div>
+          <span class="label-caps" style="color:var(--color-stone-muted); display:block; margin-bottom:0.25rem;">Fig 03. Twilight Choreography</span>
+          <p class="body-sm">Reflective infinity basin amplifying the warm architectural interior light into the evening garden.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Material Palette Specification Table -->
+    <section class="section-spacing" style="background-color:var(--color-bg-alt); border-top:1px solid var(--color-outline-subtle); border-bottom:1px solid var(--color-outline-subtle);">
+      <div class="page-container">
+        <div style="margin-bottom: 3rem;">
+          <span class="label-caps" style="color:var(--color-champagne-brass); display:block; margin-bottom:0.5rem;">Architectural Specification</span>
+          <h2 class="display-md">Material Palette Matrix</h2>
+        </div>
+
+        <div style="border-top:1px solid var(--color-outline-subtle);">
+          <div class="blueprint-row" style="font-weight:600; font-size:0.75rem; text-transform:uppercase; color:var(--color-stone-muted);">
+            <div>Ref</div>
+            <div>Material Element</div>
+            <div>Source / Provenance</div>
+            <div class="hide-mobile">Application</div>
+            <div class="hide-tablet">Finish</div>
+            <div>Status</div>
+          </div>
+
+          <div class="blueprint-row">
+            <div class="font-mono text-champagne-brass">M-01</div>
+            <div class="font-serif">Quarter-Sawn White Oak</div>
+            <div class="body-sm">Black Forest, Germany</div>
+            <div class="body-sm hide-mobile">Ceiling Battens & Millwork</div>
+            <div class="body-sm hide-tablet">Natural Bio-Polymer Oil</div>
+            <div class="label-caps" style="color:var(--color-champagne-brass);">Installed</div>
+          </div>
+
+          <div class="blueprint-row">
+            <div class="font-mono text-champagne-brass">M-02</div>
+            <div class="font-serif">Navona Travertine</div>
+            <div class="body-sm">Rajasthan, India</div>
+            <div class="body-sm hide-mobile">Monolith Fireplace & Island</div>
+            <div class="body-sm hide-tablet">Open-Pore Honed</div>
+            <div class="label-caps" style="color:var(--color-champagne-brass);">Installed</div>
+          </div>
+
+          <div class="blueprint-row">
+            <div class="font-mono text-champagne-brass">M-03</div>
+            <div class="font-serif">Champagne Brass</div>
+            <div class="body-sm">Moradabad, India</div>
+            <div class="body-sm hide-mobile">Hardware & Inlays</div>
+            <div class="body-sm hide-tablet">Hand-Brushed Patina</div>
+            <div class="label-caps" style="color:var(--color-champagne-brass);">Installed</div>
+          </div>
+
+          <div class="blueprint-row">
+            <div class="font-mono text-champagne-brass">M-04</div>
+            <div class="font-serif">Charred Yakisugi Cedar</div>
+            <div class="body-sm">Kerala, India</div>
+            <div class="body-sm hide-mobile">Courtyard Screen Panels</div>
+            <div class="body-sm hide-tablet">Surface Carbonized</div>
+            <div class="label-caps" style="color:var(--color-champagne-brass);">Installed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Project Navigation -->
+    <section class="section-spacing" style="background-color: var(--color-bg);">
+      <div class="page-container">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem;">
+          <div>
+            <span class="label-caps" style="color:var(--color-stone-muted); display:block; margin-bottom:0.5rem;">Next Commission</span>
+            <a href="works.html" class="display-md font-serif" style="text-decoration:none; color:var(--color-primary);">
+              Courtyard House, Jubilee Hills →
+            </a>
+          </div>
+          <a href="works.html" class="btn btn-outline">
+            Return to All Works
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Architectural Footer -->
+  <footer style="background-color: var(--color-bg-alt); border-top: 1px solid var(--color-outline-subtle); padding: 5rem 0 3rem;">
+    <div class="page-container">
+      <div class="grid-12" style="margin-bottom: 4rem;">
+        <div style="grid-column: span 4;">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.5rem; font-size:1.6rem;">
+            HUASAN <span class="dot"></span>
+          </a>
+          <p class="body-sm" style="color:var(--color-stone-muted); max-width: 320px; margin-bottom: 2rem;">
+            Atelier for architectural quietude, spatial minimalism, and monolithic interior craftsmanship.
+          </p>
+          <div class="label-caps" style="color:var(--color-champagne-brass);">Hyderabad • Jubilee Hills • Banjara Hills</div>
+        </div>
+
+        <div style="grid-column: span 2;">
+          <span class="label-caps" style="display:block; margin-bottom:1.5rem;">Atelier</span>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.75rem;">
+            <li><a href="works.html" class="body-sm nav-link" style="text-transform:none;">Works Archive</a></li>
+            <li><a href="studio.html" class="body-sm nav-link" style="text-transform:none;">Studio Manifesto</a></li>
+            <li><a href="services.html" class="body-sm nav-link" style="text-transform:none;">Services & Scope</a></li>
+            <li><a href="project-oak-residence.html" class="body-sm nav-link" style="text-transform:none;">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <div style="grid-column: span 3;">
+          <span class="label-caps" style="display:block; margin-bottom:1.5rem;">Direct Channels</span>
+          <p class="body-sm" style="margin-bottom:0.5rem;">
+            <strong>Commissions:</strong><br />
+            <a href="mailto:inquiries@huasanstudios.com" style="color:inherit; text-decoration:none;">inquiries@huasanstudios.com</a>
+          </p>
+          <p class="body-sm">
+            <strong>Press & Publications:</strong><br />
+            <a href="mailto:press@huasanstudios.com" style="color:inherit; text-decoration:none;">press@huasanstudios.com</a>
+          </p>
+        </div>
+
+        <div style="grid-column: span 3;">
+          <span class="label-caps" style="display:block; margin-bottom:1.5rem;">Studio Hours</span>
+          <p class="body-sm" style="color:var(--color-stone-muted); margin-bottom:1rem;">
+            Monday – Friday<br />
+            10:00 – 18:00 IST
+          </p>
+          <p class="body-sm" style="color:var(--color-stone-muted);">
+            By appointment only.
+          </p>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; border-top: 1px solid var(--color-outline-subtle); padding-top: 2rem;" class="body-sm">
+        <span style="color:var(--color-stone-muted);">© 2026 HUASAN Studios AG. All rights reserved.</span>
+        <span style="color:var(--color-stone-muted);">Architectural Quietude System v2.4</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
