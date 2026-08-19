@@ -127,32 +127,23 @@
 <link href="css/motion.css" rel="stylesheet"/>
 </head>
 <body class="bg-paper text-primary font-body-md antialiased overflow-x-hidden selection:bg-sand selection:text-espresso">
-<!-- Navigation -->
-<header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md transition-colors duration-500 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6" id="navbar">
-<a class="font-headline-lg text-headline-lg-mobile md:text-[2.15rem] md:leading-none tracking-tighter text-primary" href="index.html">HUASAN</a>
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md dark:bg-transparent transition-colors duration-500 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6" id="navbar">
+<a class="font-headline-lg text-headline-lg-mobile md:text-[2.15rem] md:leading-none tracking-tighter text-espresso" href="index.html">HUASAN</a>
 <nav class="hidden md:flex items-center gap-8">
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors hover:opacity-70" href="works.html">Portfolio</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors hover:opacity-70" href="services.html">Services</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors hover:opacity-70" href="studio.html">Philosophy</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors hover:opacity-70" href="journal.html">Journal</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="works.html">Portfolio</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="services.html">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="studio.html">Philosophy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="journal.html">Journal</a>
 </nav>
 <div class="flex items-center gap-6">
-<a class="hidden md:inline-block font-label-caps text-label-caps text-primary border-b border-primary pb-1 hover:opacity-70 transition-opacity" href="contact.html">Contact</a>
-<button class="md:hidden flex flex-col gap-[4px] w-6" id="mobile-menu-btn">
-<span class="w-full h-[1px] bg-primary"></span>
-<span class="w-full h-[1px] bg-primary"></span>
+<a class="hidden md:inline-block font-label-caps text-label-caps text-espresso border-b border-espresso pb-1 hover:opacity-70 transition-opacity" href="contact.html">Contact</a>
+<button type="button" id="mobile-menu-btn" aria-label="Open menu" class="md:hidden flex flex-col gap-[4px] w-6">
+<span class="w-full h-[1px] bg-espresso"></span>
+<span class="w-full h-[1px] bg-espresso"></span>
 </button>
 </div>
 </header>
-<!-- Mobile Menu Overlay -->
-<div class="fixed inset-0 bg-surface z-40 hidden flex-col justify-center items-center gap-8 pt-20 transition-all duration-300 opacity-0 pointer-events-none" id="mobile-menu">
-<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface-variant" href="works.html">Portfolio</a>
-<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface-variant" href="services.html">Services</a>
-<a class="font-headline-lg-mobile text-headline-lg-mobile text-primary" href="studio.html">Philosophy</a>
-<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface-variant" href="journal.html">Journal</a>
-<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface-variant" href="contact.html">Contact</a>
-<a class="mt-8 font-label-caps text-label-caps uppercase border-b-2 border-espresso pb-1" href="contact.html">Inquire</a>
-</div>
 <!-- Main Content Canvas -->
 <main class="pt-32 md:pt-48 pb-section-gap">
 <!-- Hero Section -->
@@ -288,35 +279,17 @@
                 el.style.animationPlayState = 'paused';
                 observer.observe(el);
             });
-
-            // Mobile menu toggle
-            const mobileBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            let menuOpen = false;
-
-            if(mobileBtn && mobileMenu) {
-                mobileBtn.addEventListener('click', () => {
-                    menuOpen = !menuOpen;
-                    if(menuOpen) {
-                        mobileMenu.classList.remove('hidden');
-                        setTimeout(() => {
-                            mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
-                            mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
-                            document.body.style.overflow = 'hidden';
-                        }, 10);
-                        mobileBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">close</span>';
-                    } else {
-                        mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
-                        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
-                        setTimeout(() => {
-                            mobileMenu.classList.add('hidden');
-                            document.body.style.overflow = 'auto';
-                        }, 300);
-                        mobileBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">menu</span>';
-                    }
-                });
-            }
         });
     </script>
+<div id="mobile-menu" class="fixed inset-0 z-[60] hidden opacity-0 pointer-events-none bg-paper/95 backdrop-blur-xl transition-opacity duration-300">
+  <div class="flex flex-col justify-center h-full px-margin-mobile md:px-margin-desktop gap-8">
+    <a class="font-headline-lg text-headline-lg text-espresso" href="index.html">Home</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="works.html">Portfolio</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="studio.html">Studio</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="services.html">Services</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="journal.html">Journal</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="contact.html">Contact</a>
+  </div>
+</div>
 <script src="js/studio.js"></script>
 </body></html>
