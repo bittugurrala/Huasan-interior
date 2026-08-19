@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initWorksFilter();
   initLookbookFallback();
   initImageCarousels();
+  initScrollMotion();
 });
 
 function initMobileMenu() {
@@ -191,4 +192,132 @@ function startCarousel(slides, index) {
     current = (current + 1) % slides.length;
     slides[current].classList.replace("opacity-0", "opacity-100");
   }, delay);
+}
+
+function initScrollMotion() {
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  injectScrollProgress();
+  if (reduced) {
+    document.querySelectorAll(".fade-in-up, .animate-fade-in").forEach((el) => {
+      el.classList.add("visible", "is-inview");
+      el.style.opacity = "1";
+      el.style.transform = "none";
+    });
+    return;
+  }
+
+  prepareTextReveals();
+  prepareMediaReveals();
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-inview", "visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -12% 0px", threshold: 0.12 }
+  );
+
+  document
+    .querySelectorAll(".fade-in-up, .animate-fade-in, .fade-up, .reveal-block, .reveal-copy, .tracking-in, .media-reveal, .line-grow, [data-split='true']")
+    .forEach((el) => observer.observe(el));
+
+  const heroCopy = document.querySelector("[data-hero-copy]");
+  if (heroCopy) {
+    requestAnimationFrame(() => {
+      heroCopy.classList.add("is-inview", "visible");
+      heroCopy.querySelectorAll("h1, h2, p, a").forEach((el) => el.classList.add("is-inview", "visible"));
+    });
+  }
+
+  const giant = document.querySelector("footer .font-display-lg, .footer-giant");
+  if (giant) {
+    giant.classList.add("footer-giant");
+    window.addEventListener(
+      "scroll",
+      () => {
+        const rect = giant.parentElement.getBoundingClientRect();
+        if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+        const shift = (window.innerHeight - rect.top) * 0.06;
+        giant.style.transform = `translate3d(0, ${shift}px, 0)`;
+      },
+      { passive: true }
+    );
+  }
+}
+
+function injectScrollProgress() {
+  if (document.getElementById("scroll-progress")) return;
+  const bar = document.createElement("div");
+  bar.id = "scroll-progress";
+  bar.setAttribute("aria-hidden", "true");
+  document.body.prepend(bar);
+
+  const update = () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const value = max > 0 ? (window.scrollY / max) * 100 : 0;
+    bar.style.width = `${value}%`;
+  };
+
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+}
+
+function prepareTextReveals() {
+  document.querySelectorAll("main h1, main h2, main h3").forEach((el) => {
+    if (el.closest("header, footer, #mobile-menu")) return;
+    if (el.classList.contains("tracking-in")) return;
+    splitHeading(el);
+  });
+
+  document.querySelectorAll("main p").forEach((el, index) => {
+    if (el.closest("header, footer, #mobile-menu, form")) return;
+    if (el.querySelector("a, br, span") && el.querySelector("a")) {
+      el.classList.add("reveal-copy");
+      el.style.transitionDelay = `${(index % 4) * 60}ms`;
+      return;
+    }
+    el.classList.add("reveal-copy");
+    el.style.transitionDelay = `${(index % 5) * 50}ms`;
+  });
+}
+
+function splitHeading(el) {
+  if (el.dataset.split === "true") return;
+  if (el.querySelector("a, br, span, img")) {
+    el.classList.add("reveal-block");
+    return;
+  }
+
+  const text = el.textContent.replace(/\s+/g, " ").trim();
+  if (!text || text.length < 2) return;
+
+  const words = text.split(" ");
+  el.setAttribute("aria-label", text);
+  el.textContent = "";
+  words.forEach((word, index) => {
+    const clip = document.createElement("span");
+    clip.className = "word-clip";
+    const inner = document.createElement("span");
+    inner.className = "word-inner";
+    inner.textContent = word;
+    inner.style.transitionDelay = `${80 + index * 55}ms`;
+    inner.setAttribute("aria-hidden", "true");
+    clip.appendChild(inner);
+    el.appendChild(clip);
+    if (index < words.length - 1) el.appendChild(document.createTextNode(" "));
+  });
+  el.dataset.split = "true";
+}
+
+function prepareMediaReveals() {
+  document.querySelectorAll("main img.object-cover, main .image-scale, main .image-carousel").forEach((node) => {
+    const target = node.tagName === "IMG" ? node.parentElement : node;
+    if (!target || target.closest("header, #hero-carousel, footer")) return;
+    if (target.id === "hero-carousel") return;
+    if (target.classList.contains("media-reveal")) return;
+    target.classList.add("media-reveal");
+  });
 }

@@ -31,6 +31,7 @@
             transform: scale(1.05);
         }
     </style>
+<link href="css/motion.css" rel="stylesheet"/>
 </head>
 <body class="bg-paper text-espresso font-body-md antialiased selection:bg-sand selection:text-espresso">
 <!-- TopNavBar -->
@@ -65,7 +66,7 @@
 </div>
 <div class="absolute inset-0 bg-paper/20 z-20 pointer-events-none"></div>
 </div>
-<div class="relative z-30 w-full max-w-5xl mx-auto flex flex-col items-center text-center fade-in-up">
+<div class="relative z-30 w-full max-w-5xl mx-auto flex flex-col items-center text-center" data-hero-copy>
 <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-[clamp(2.25rem,4.8vw,4.5rem)] md:leading-none text-espresso w-full mb-6 md:whitespace-nowrap">
                     SPACES THAT SHAPE HOW WE LIVE.
                 </h1>
@@ -141,14 +142,21 @@
 </div>
 </div>
 </section>
+<!-- Material language -->
+<section class="material-marquee" aria-hidden="true">
+<div class="material-marquee-track">
+<span>Travertine</span><span>Teak</span><span>Linen</span><span>Lime wash</span><span>River stone</span><span>Brass</span><span>Plaster</span><span>Oak</span>
+<span>Travertine</span><span>Teak</span><span>Linen</span><span>Lime wash</span><span>River stone</span><span>Brass</span><span>Plaster</span><span>Oak</span>
+</div>
+</section>
 <!-- Design Philosophy (Material Focus) -->
 <section class="relative h-[819px] w-full flex items-center justify-center overflow-hidden">
 <div class="absolute inset-0 z-0">
 <img class="w-full h-full object-cover opacity-60" data-alt="An extreme macro, highly detailed photograph of architectural materials stacked thoughtfully. A slab of heavily veined, warm beige travertine sits atop a piece of smooth, dark oiled walnut wood. Next to it is a swath of coarse, unbleached linen fabric. The lighting is soft and raking, highlighting the incredible texture and tactile qualities of these natural elements, embodying a philosophy of material honesty." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaJE30SU-NkywnTdo3A2_V6zparaQujKm0tkfqvTqEJONmqj9CmyOZdMi_b__qJYbRlyd7KbmdaRihYbwCegWwlFZ3S83eWMWZmonG0p6XIptDKwOBL44QVErf1X-qaZA4XBEWhVsrYX4KkoHrEASV6BgYYIBsZDKkVjgXIhYr3Ac4v-j6C_TC-eFLj9cUjsuNtNUj1sJgxrOvQJEGUCXcqmbAWQqgHs3I_N29lW6Ci0eI-eoeaWc"/>
 <div class="absolute inset-0 bg-espresso/20"></div>
 </div>
-<div class="relative z-10 text-center px-margin-mobile fade-in-up">
-<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-paper">TIMELESS BY DESIGN</h2>
+<div class="relative z-10 text-center px-margin-mobile">
+<h2 class="tracking-in font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-paper">TIMELESS BY DESIGN</h2>
 </div>
 </section>
 <!-- Process Section -->
@@ -158,7 +166,8 @@
 <span class="font-label-caps text-label-caps text-shadow-taupe block mb-4">PROCESS</span>
 <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg">OUR APPROACH</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-shadow-taupe/30 pt-12">
+<div class="h-px bg-shadow-taupe/30 mb-12 line-grow"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
 <div class="fade-in-up" style="transition-delay: 100ms;">
 <span class="font-headline-md text-headline-md text-shadow-taupe block mb-4">01</span>
 <h3 class="font-headline-md text-headline-md mb-4">Discover</h3>
@@ -211,13 +220,14 @@
 </div>
 </div>
 </div>
-<div class="mt-24 border-t border-espresso/10 pt-8 flex justify-between items-center relative z-10">
+<div class="mt-24 border-t border-espresso/10 pt-8 relative z-10">
 <div class="flex gap-6">
 <a class="font-label-caps text-label-caps text-on-secondary-container dark:text-on-tertiary-container hover:text-espresso dark:hover:text-ivory hover:underline decoration-espresso dark:decoration-ivory underline-offset-4 hover:translate-x-1 transition-transform duration-300" href="#">Privacy Policy</a>
 <a class="font-label-caps text-label-caps text-on-secondary-container dark:text-on-tertiary-container hover:text-espresso dark:hover:text-ivory hover:underline decoration-espresso dark:decoration-ivory underline-offset-4 hover:translate-x-1 transition-transform duration-300" href="#">Terms of Service</a>
 </div>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-4 max-w-md">This is a demo page. You may find a few things that are not configured yet.</p>
 </div>
-<h1 class="absolute bottom-[-5%] left-0 w-full text-center font-display-lg text-[12vw] leading-none text-paper/40 pointer-events-none whitespace-nowrap overflow-hidden">
+<h1 class="footer-giant absolute bottom-[-5%] left-0 w-full text-center font-display-lg text-[12vw] leading-none text-paper/40 pointer-events-none whitespace-nowrap overflow-hidden">
                 DESIGN WITH INTENTION
             </h1>
 </footer>
