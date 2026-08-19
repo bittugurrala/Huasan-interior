@@ -18,13 +18,68 @@ const HERO_CAROUSEL_IMAGES = [
   }
 ];
 
+const SITE_NAVBAR_HTML = `<header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md dark:bg-transparent transition-colors duration-500 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6" id="navbar">
+<a class="font-headline-lg text-headline-lg-mobile md:text-[2.15rem] md:leading-none tracking-tighter text-espresso" href="index.html">HUASAN</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="works.html">Portfolio</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="services.html">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="studio.html">Philosophy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-espresso transition-colors hover:opacity-70" href="journal.html">Journal</a>
+</nav>
+<div class="flex items-center gap-6">
+<a class="hidden md:inline-block font-label-caps text-label-caps text-espresso border-b border-espresso pb-1 hover:opacity-70 transition-opacity" href="contact.html">Contact</a>
+<button type="button" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" class="md:hidden flex flex-col gap-[4px] w-6">
+<span class="w-full h-[1px] bg-espresso"></span>
+<span class="w-full h-[1px] bg-espresso"></span>
+</button>
+</div>
+</header>`;
+
+const SITE_MOBILE_MENU_HTML = `<div id="mobile-menu" class="fixed inset-0 z-[60] hidden opacity-0 pointer-events-none bg-paper/95 backdrop-blur-xl transition-opacity duration-300">
+  <div class="flex flex-col justify-center h-full px-margin-mobile md:px-margin-desktop gap-8">
+    <a class="font-headline-lg text-headline-lg text-espresso" href="index.html">Home</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="works.html">Portfolio</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="studio.html">Studio</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="services.html">Services</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="journal.html">Journal</a>
+    <a class="font-headline-lg text-headline-lg text-espresso" href="contact.html">Contact</a>
+  </div>
+</div>`;
+
 document.addEventListener("DOMContentLoaded", () => {
+  initSiteNav();
+  initNavbarScroll();
   initMobileMenu();
   initWorksFilter();
   initLookbookFallback();
   initImageCarousels();
   initScrollMotion();
 });
+
+function initSiteNav() {
+  const header = document.getElementById("navbar");
+  if (header) header.outerHTML = SITE_NAVBAR_HTML;
+
+  const menu = document.getElementById("mobile-menu");
+  if (menu) {
+    menu.outerHTML = SITE_MOBILE_MENU_HTML;
+  } else {
+    document.body.insertAdjacentHTML("beforeend", SITE_MOBILE_MENU_HTML);
+  }
+}
+
+function initNavbarScroll() {
+  const navbar = document.getElementById("navbar");
+  if (!navbar) return;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.replace("bg-transparent", "bg-ivory/90");
+    } else {
+      navbar.classList.replace("bg-ivory/90", "bg-transparent");
+    }
+  });
+}
 
 function initMobileMenu() {
   const btn = document.getElementById("mobile-menu-btn") || document.querySelector("header button.md\\:hidden");
