@@ -66,15 +66,18 @@ header nav a:hover {
   transform: none;
 }
 
-.tracking-in {
-  letter-spacing: 0.28em;
-  opacity: 0;
-  transition: letter-spacing 1.4s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 1s ease;
+.tracking-in,
+.scroll-type {
+  will-change: transform, letter-spacing, opacity;
 }
 
-.tracking-in.is-inview {
-  letter-spacing: -0.02em;
+.tracking-in {
+  letter-spacing: 0.08em;
   opacity: 1;
+}
+
+.scroll-type {
+  transition: none;
 }
 
 .media-reveal {
@@ -148,6 +151,7 @@ header nav a:hover {
   .reveal-block,
   .reveal-copy,
   .tracking-in,
+  .scroll-type,
   .media-reveal,
   .media-reveal img,
   .media-reveal .carousel-slide img,

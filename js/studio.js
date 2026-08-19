@@ -110,7 +110,9 @@ function initImageCarousels() {
     }));
 
   document.querySelectorAll("img.object-cover").forEach((img, index) => {
-    if (img.closest("header, #mobile-menu, .carousel-slide")) return;
+    if (img.closest("header, #mobile-menu, .carousel-slide, #hero-carousel")) return;
+    const parent = img.parentElement;
+    if (parent && parent.classList.contains("absolute") && parent.classList.contains("inset-0")) return;
     convertImageToCarousel(img, pageImages, index);
   });
 
@@ -232,20 +234,93 @@ function initScrollMotion() {
     });
   }
 
-  const giant = document.querySelector("footer .font-display-lg, .footer-giant");
-  if (giant) {
-    giant.classList.add("footer-giant");
-    window.addEventListener(
-      "scroll",
-      () => {
-        const rect = giant.parentElement.getBoundingClientRect();
-        if (rect.bottom < 0 || rect.top > window.innerHeight) return;
-        const shift = (window.innerHeight - rect.top) * 0.06;
-        giant.style.transform = `translate3d(0, ${shift}px, 0)`;
-      },
-      { passive: true }
-    );
-  }
+  initScrollType();
+}
+
+function initScrollType() {
+  const nodes = [];
+  const pick = document.querySelectorAll("main h1, main h2, .tracking-in, .footer-giant");
+
+  pick.forEach((el) => {
+    if (el.closest("header, #mobile-menu, nav")) return;
+    const cls = el.className || "";
+    const large =
+      el.classList.contains("tracking-in") ||
+      el.classList.contains("footer-giant") ||
+      cls.includes("display-lg") ||
+      cls.includes("headline-lg") ||
+      cls.includes("text-[12vw]");
+    if (!large) return;
+
+    el.classList.add("scroll-type");
+    let mode = "headline";
+    if (el.classList.contains("footer-giant")) mode = "giant";
+    else if (el.classList.contains("tracking-in")) mode = "tracking";
+    else if (el.closest("[data-hero-copy]")) mode = "hero";
+
+    nodes.push({
+      el,
+      frame: el.closest("section, footer") || el.parentElement,
+      mode
+    });
+  });
+
+  if (!nodes.length) return;
+
+  let ticking = false;
+  const render = () => {
+    ticking = false;
+    const vh = window.innerHeight;
+    const mobile = window.innerWidth < 768;
+
+    nodes.forEach(({ el, frame, mode }) => {
+      const rect = frame.getBoundingClientRect();
+      if (rect.bottom < -120 || rect.top > vh + 120) return;
+
+      const start = vh * 0.92;
+      const end = vh * 0.18;
+      let progress = (start - rect.top) / (start - end + Math.max(rect.height * 0.35, 1));
+      progress = Math.min(1, Math.max(0, progress));
+
+      if (mode === "tracking") {
+        const from = mobile ? 0.1 : 0.2;
+        const tracking = from - progress * (from + 0.02);
+        const y = (1 - progress) * (mobile ? 28 : 56);
+        el.style.letterSpacing = `${tracking}em`;
+        el.style.transform = `translate3d(0, ${y}px, 0) scale(${1.04 - progress * 0.04})`;
+        el.style.opacity = String(0.55 + progress * 0.45);
+        return;
+      }
+
+      if (mode === "hero") {
+        const leave = Math.min(1, Math.max(0, -rect.top / (rect.height * 0.5)));
+        el.style.transform = `translate3d(0, ${leave * -56}px, 0)`;
+        el.style.opacity = String(1 - leave * 0.9);
+        return;
+      }
+
+      if (mode === "giant") {
+        const y = (vh - rect.top) * 0.14;
+        el.style.transform = `translate3d(0, ${y}px, 0)`;
+        el.style.letterSpacing = `${0.08 - progress * 0.1}em`;
+        return;
+      }
+
+      const y = (1 - progress) * 42;
+      el.style.transform = `translate3d(0, ${y}px, 0)`;
+      el.style.opacity = String(0.2 + progress * 0.8);
+    });
+  };
+
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(render);
+  };
+
+  render();
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
 }
 
 function injectScrollProgress() {
@@ -317,6 +392,7 @@ function prepareMediaReveals() {
     const target = node.tagName === "IMG" ? node.parentElement : node;
     if (!target || target.closest("header, #hero-carousel, footer")) return;
     if (target.id === "hero-carousel") return;
+    if (target.classList.contains("absolute") && target.classList.contains("inset-0")) return;
     if (target.classList.contains("media-reveal")) return;
     target.classList.add("media-reveal");
   });
